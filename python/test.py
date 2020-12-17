@@ -28,5 +28,5 @@ B = numpy.array(indices, dtype=ctypes.c_uint)
 
 print("Constructed B")
 
-Nsol, result = blanczos.blanczos(B, len(B)/2, Nrow, Ncol)
+Nsol, result = blanczos.blanczos(B, len(B)//2, Nrow, Ncol)
 
