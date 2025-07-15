@@ -468,11 +468,11 @@ extern "C" uint32_t blanczos(const uint32_t * B, const uint64_t N, const uint32_
     const uint32_t nthreads = std::max(1U, std::thread::hardware_concurrency());
     constexpr double cache = 512.0 * 1024.0; // Blocks capped at 512 KB.
 
-    if (Ncol < Nrow + 64U)
-    {
-        std::cerr << "Ncol >= Nrow + 64 is expected." << std::endl;
-        exit(17);
-    }
+    // if (Ncol < Nrow + 64U)
+    // {
+    //     std::cerr << "Ncol >= Nrow + 64 is expected." << std::endl;
+    //     exit(17);
+    // }
 
     const __blanczos_matrix::sparse matrix = __blanczos_matrix::sparse(B, N, Nrow, Ncol, cache);
 
