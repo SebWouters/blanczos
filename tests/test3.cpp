@@ -1,7 +1,7 @@
 /*
     blanczos: block lanczos for gf(2)
 
-    Copyright (c) 2020, Sebastian Wouters
+    Copyright (c) 2025, Sebastian Wouters
     All rights reserved.
 
     This file is part of blanczos, licensed under the BSD 3-Clause License.
